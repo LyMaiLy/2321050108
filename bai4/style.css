@@ -1,0 +1,36 @@
+h3{
+    color:orange;
+}
+
+#title {
+    background-color: aqua;
+}
+
+.bg{
+    background-color: cadetblue;
+}
+
+p{
+    color:red;
+    background-color:blue;
+}
+
+.box1{
+    background-color: red;
+}
+
+.box2{
+    background-color: green;
+    /* truyền một giá trị: cách xung quanh = giá trị đó
+    2 giá trị: giá trị 1(trên, dưới), 2(trái, phải) */
+    /* đi theo chiều kim đồng hồ: trên phải dưới trái */
+    /* margin:50px 30px 100px 10px; */
+    width: 50px;
+    margin: 50px auto; 
+    /* margin auto: căn khối giữa */
+    
+}
+
+.box3{
+    background-color:orange;
+}
