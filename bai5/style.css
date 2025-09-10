@@ -172,3 +172,14 @@ main{
     font-weight: bold;
     border-radius: 10px;
 }
+
+.huongdan-lienket{
+    list-style: none;
+    display:flex;
+    text-decoration-line: none;
+    justify-content: space-between
+}
+
+.huongdan-lienket:hover {
+    color: lightgray;
+}
