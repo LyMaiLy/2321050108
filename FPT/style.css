@@ -126,5 +126,11 @@ main{
     width: 100%;
 }
 footer{
-    margin:30px;
+    background-color: black;
+    margin:auto;
+}
+
+.noidung:hover {
+    color: orange;
+    margin: 20%;
 }
