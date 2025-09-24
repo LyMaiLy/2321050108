@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai 2 JavaScript</title>
+</head>
+<body>
+    <script>
+
+        let thongTinDonHang = {
+            maDonHang: "63883",
+            thongTinKhachHang: {
+                hoTen: "Nguyen Van A",
+                soDienThoai: "0372837295",
+                trangThaiThanhVien: false,
+            },
+            danhSachSanPham: {
+                sp01: {
+                    maSanPham: "001",
+                    tenSanPham: "Matcha",
+                    soLuong: 10,
+                    giaTien: 10000,
+                },
+                sp02: {
+                    maSanPham: "002",
+                    tenSanPham: "Cà phê",
+                    soLuong: 10,
+                    giaTien: 20000,
+                },
+                sp03: {
+                    maSanPham: "003",
+                    tenSanPham: "Trà sữa",
+                    soLuong: 15,
+                    giaTien: 20000,
+                }
+            },
+            thanhToanThanhCong: true,
+            diaChiGiaoHang: "Đông Ngạc"
+        }
+        let tongSp1 = thongTinDonHang.danhSachSanPham.sp01.giaTien + thongTinDonHang.danhSachSanPham.sp01.soLuong;
+        let tongSp2 = thongTinDonHang.danhSachSanPham.sp02.giaTien * thongTinDonHang.danhSachSanPham.sp02.soLuong;
+        let tongSp3 = thongTinDonHang.danhSachSanPham.sp03.giaTien * thongTinDonHang.danhSachSanPham.sp03.soLuong;
+
+        let tongTien = tongSp1 + tongSp2 + tongSp3;
+
+        document.writeln("Tong tien don hang = " + tongTien + "<br>");
+        //kiểm tra độ dài chuỗi dùng length
+        document.writeln("Độ dài của mã đơn hàng: " + thongTinDonHang.maDonHang.length + "<br>");
+
+        //các phương thức  của String
+        var myString = "Hello kien";
+        document.writeln(myString[4] + "<br>");
+
+        //cắt chuỗi: slice; 
+        document.writeln(myString.slice(1,4) + "<br>");
+
+        //thay thế chuỗi: replace
+        document.writeln(myString.replace("Hello", "Hi") + "<br>");
+
+        //chuyển đổi chữ hoa/ thường
+        document.writeln(myString.toLowerCase() + "<br>");
+
+        //tìm kiếm chuỗi: indexOf
+        //indexOf trả ra vị trí xuất hiện đầu tiên của kí tự. Nếu có: vị trí; Nếu không: -1.
+        document.writeln(myString.indexOf('e') + "<br>");
+
+        document.writeln(myString.includes('e') + "<br>");
+
+        //tách chuỗi thành mảng
+        document.writeln(myString.split(' ') + "<br>");
+
+        //kiểm tra chuỗi
+        let danhSach = ["Phạm Văn A ", "Nguyễn Thị H ", "Lương Ngọc B "]
+        document.writeln(danhSach[1].startsWith("Nguyễn") + "<br>");
+
+        //thuộc tính của Number: chuyển chuỗi về số
+        //let so = "123";
+        //document.Writeln(typeof (so));
+        //document.Writeln(typeof (Number(so)));
+
+        //parseInt(): chuyển chuỗi thành số nguyên
+        //parseFloat(): chuyển chuỗi thành số thực
+        //parseInt("10.5"); - 10
+
+        //toFixed(): định dạng số với số chữ số thập phân nhất định.
+        //var pi = 3.14159;
+        //pi.toFixed(2); - "3.14"
+
+        //isNaN(): kiểm tra xem một giá trịn có phải lag not a number hay không
+        //isNaN(NaN); - true
+
+        //isFinite(): kiểm tra xem một giá trị có phải là số hữu hạn hay không.
+        //isFinite(10); - true
+
+        //date
+        let toDay = new Date(); //ngày giờ hiện tại 
+        document.writeln(toDay + "<br>");
+        
+        document.writeln(toDay.getMonth() + "<br>"); //lấy ra ngày, tháng, năm hiện tại 
+
+        //lấy ra giờ, phút giây
+        document.writeln(toDay.getHours() + "<br>");
+
+
+
+
+
+
+    </script>
+</body>
+</html>
