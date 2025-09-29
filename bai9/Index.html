@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let yesterday = new Date('2025 - 09 - 28');
+        document.writeln(yesterday + "<br>");
+
+        //MẢNG
+        let arr = [1, 2, 3, 4, 5, 'a', 'b', 'c', 5, 6]; //có thể đan xen chữ và số trong một mảng 
+        //let a = "abc";
+        document.writeln(arr.length + "<br>");
+        document.writeln(arr[3] + "<br>"); //lấy ra một phần tử trong mảng (bắt đầu từ số 0)
+
+        //THUỘC TÍNH CỦA MẢNG
+        //document.writeln(arr.IndexOf(6) + "<br>"); - tìm 1 giá trị cụ thể trong mảng và trả ra giá trị đầu tiên của mảng đó. 
+        //document.writeln(arr.lastIndexOf(5) + "<br>"); - trả ra giá trị cuối cùng.
+        //document.writeln(Array.isArray(arr)); - kiểm tra xem có phải là một mảng hay không.
+
+        //PHƯƠNG THỨC CỦA MẢNG
+        let a, b, c, d;
+        a = [1, 2, 3];
+        b = "JavaScript";
+        c = [42, "VBScript"];
+        //a = a.concat(b, c); - nối các mảng concat
+        d = a.concat(b, c);
+        //document.writeln(d + "<br>");
+        //e = d.pop(); - lấy ra(bỏ đi) phần tử cuối cùng trong mảng
+        //document.writeln(d.join("-") + "<br>"); - thêm vào giữa các mảng dấu ngăn cách. 
+        d.push("kiên"); // thêm một phần tử vào cuối mảng
+        //document.writeln(d + "<br>");
+        d[3] = 4; //thay thế một phần tử trong mảng -> trỏ đến vị trí cần thay thế.
+        //document.writeln(d.reverse() + "<br>"); - đảo vị trí của các phần tử trong mảng
+        document.writeln(d + "<br>");
+        //shift(): xóa phần tử đầu tiên; unshift(): thêm phần tử vào đầu mảng
+             
+        //IF-ELSE
+        // let today = new date();
+        // let now = today.getHours();
+        // if (now < 10) { //giờ hiện tại nhỏ hơn 10h thì in ra chào buổi sáng
+        //     document.writeln("Chào buổi sáng!");
+        // } else if (now >= 10 && now < 12) {
+        //     document.writeln("Chào buổi trưa!"); 
+        // } else if (now >= 12 && now < 17) {
+        //     document.writeln("Chào buổi chiều!");
+        // } else if (now >= 17 && now < 22) {
+        //     document.writeln("Chào buổi tối!");
+        // } else {
+        //     document.writeln("Chào buổi đêm!");
+        // }
+
+        //kiểm tra số là số chẵn hay lẻ
+        let so = "1000000000000003";
+        //document.writeln(so[so.length -1]); - lấy ra số cuối cùng trong chuỗi số
+        let soCuoiCung = parseInt(so[so.length -1]);
+        if (soCuoiCung %2 === 0 ) {
+            document.writeln("Là số chẵn");
+        } else {
+            document.writeln("Là số lẻ");
+        }
+    </script>
+</body>
+</html>
